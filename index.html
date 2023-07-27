@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Presentation</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal" style="background: linear-gradient(to top, #09203f 0%, #537895 100%)">
+			<div class="slides">
+				<section>
+					<h1>CSS Grid Layout</h1>
+				</section>
+				<section>
+					<h2>What is Grid?</h2>
+				</section>
+				<section>
+					<img src="https://d585tldpucybw.cloudfront.net/sfimages/default-source/blogs/2020/2020-10/flexbox-compared-css-grid.png" alt="grid scheme" style="margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+				</section>
+				<section>
+					<h3>About grid</h3>
+					<div class="flex" style="display: flex; align-items: center; justify-content: center;">
+						<div class="block" style="">
+							<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">1. Grid container</p>
+							<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">2. Grid Template Columns</p>
+							<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">3. The fr unit</p>	
+							<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">4. Unequal sizes</p>	
+							<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">6. Repeat() notation</p>
+							<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">7. Implicit and explicit grids</p>
+							<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">8. Track sizing and minmax</p>
+							<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">9. Grid lines</p>
+						</div>
+						<div class="block" style="margin-left: 100px;">
+							<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">10. Positioning items against lines</p>
+							<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">11. Line-positioning shorthands</p>
+							<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">12. Grid cells</p>
+							<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">13. Grid areas</p>
+							<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">14. Gutters</p>
+							<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">15. Nesting grids</p>
+							<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">16. Subgrid</p>
+							<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">17. Layering items with z-index</p>
+						</div>
+					</div>
+					
+				</section>
+				<section>
+					<h3>Grid container</h3>
+					<p>HTML:</p>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						<div class="wrapper">
+							<div>One</div>
+							<div>Two</div>
+							<div>Three</div>
+							<div>Four</div>
+							<div>Five</div>
+						</div>
+					</code></pre>
+					<p>CSS:</p>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						.wrapper {
+							display: grid;
+						}
+					</code></pre>
+					
+				</section>
+				<section>
+					<h3>Grid Template Columns</h3>
+					<p>CSS:</p>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						.wrapper {
+							display: grid;
+							grid-template-columns: 200px 200px 200px;
+						}
+					</code></pre>
+					<img src="https://cdn-images-1.medium.com/v2/resize:fit:800/1*TNzLe0qKCi_MhuHiJ8IEOw.png" alt="grid scheme" style="margin: 0 auto 4rem auto; background: transparent;" class="fragment">
+				</section>
+				<section>
+					<h3>The fr unit</h3>
+					<p>fr - fraction of the available space in the grid container.</p>
+					<p>CSS:</p>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						.wrapper {
+							display: grid;
+							grid-template-columns: 1fr 1fr 1fr;
+						}
+					</code></pre>
+					<img src="https://cdn-images-1.medium.com/v2/resize:fit:800/1*TNzLe0qKCi_MhuHiJ8IEOw.png" alt="fr scheme" style="margin: 0 auto 4rem auto; background: transparent;" class="demo-logo">
+				</section>
+				<section>
+					<h3>Unequal sizes</h3>
+					<p>CSS:</p>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						.wrapper {
+							display: grid;
+							grid-template-columns: 2fr 1fr 1fr;
+						}
+					</code></pre>
+					<img src="https://i.ibb.co/7V4TxpN/1.png" alt="fr scheme" style="margin: 0 auto 4rem auto; background: transparent;" class="fragment">
+				</section>
+				<section>
+					<h3>Repeat() notation</h3>
+					<p>CSS:</p>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						.wrapper {
+							display: grid;
+							grid-template-columns: 1fr 1fr 1fr 5fr;
+						}
+					</code></pre>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						.wrapper {
+							display: grid;
+							grid-template-columns: repeat(3, 1fr) 5fr;
+						}
+					</code></pre>
+				</section>
+				<section>
+					<h3>Implicit and explicit grids</h3>
+					<p>CSS:</p>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						.wrapper {
+							display: grid;
+							grid-template-columns: repeat(3, 1fr);
+							grid-auto-rows: 200px;
+						}
+					</code></pre>
+					<img src="https://i.ibb.co/9GhjB45/2.png" alt="Implicit and explicit grids scheme" style="margin: 0 auto 4rem auto; background: transparent;" class="fragment">
+				</section>
+				<section>
+					<h3>Track sizing and minmax</h3>
+					<p>CSS:</p>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						.wrapper {
+							display: grid;
+							grid-template-columns: repeat(3, 1fr);
+							grid-auto-rows: minmax(100px, auto);
+						}
+					</code></pre>
+					<img src="https://i.ibb.co/ZM71r3Y/3.png" alt="Track sizing and minmax scheme" style="margin: 0 auto 4rem auto; background: transparent;" class="fragment">
+				</section>
+				<section>
+					<h3>Grid lines</h3>
+					<p>CSS:</p>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						.wrapper {
+							display: grid;
+							grid-template-columns: repeat(3, 1fr);
+							grid-auto-rows: minmax(100px, auto);
+						}
+					</code></pre>
+					<img src="https://i.ibb.co/DbBNxYX/4.png" alt="Grid lines scheme" style="width: 600px; margin: 0 auto 4rem auto; background: transparent;" class="fragment">
+				</section>
+				<section>
+					<h3>Positioning items against lines</h3>
+					<p>CSS:</p>
+					<div class="flex" style="display: flex; align-items: center; justify-content: center;">
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+							.wrapper {
+								display: grid;
+								grid-template-columns: repeat(3, 1fr);
+								grid-auto-rows: 100px;
+							}						  
+							.box1 {
+								grid-column-start: 1;
+								grid-column-end: 4;
+								grid-row-start: 1;
+								grid-row-end: 3;
+							}
+							  
+							.box2 {
+								grid-column-start: 1;
+								grid-row-start: 3;
+								grid-row-end: 5;
+							}
+						</code></pre>
+						<img src="https://i.ibb.co/VLJBsyw/5.png" alt="Positioning scheme" style="width: 600px; margin: 0 0 0 4rem; background: transparent;" class="fragment">
+					</div>					
+				</section>
+				<section>
+					<h3>Line-positioning shorthands</h3>
+					<p>CSS:</p>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						.wrapper {
+							display: grid;
+							grid-template-columns: repeat(3, 1fr);
+							grid-auto-rows: 100px;
+						}
+						  
+						.box1 {
+							grid-column: 1 / 4;
+							grid-row: 1 / 3;
+						}
+						  
+						.box2 {
+							grid-column: 1;
+							grid-row: 3 / 5;
+						}
+					</code></pre>
+				</section>
+				<section>
+					<h3>Grid cells</h3>
+					<img src="https://i.ibb.co/VHbt68c/6.png" alt="Grid cells scheme" style="width: 600px; margin: 0 0 0 4rem; background: transparent;" class="demo-logo">
+				</section>
+				<section>
+					<h3>Grid areas</h3>
+					<img src="https://i.ibb.co/N24M6G5/7.png" alt="Grid areas scheme" style="width: 600px; margin: 0 0 0 4rem; background: transparent;" class="demo-logo">
+				</section>
+				<section>
+					<h3>Gutters</h3>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						.wrapper {
+							display: grid;
+							grid-template-columns: repeat(3, 1fr);
+							column-gap: 10px;
+							row-gap: 1em;
+						}
+					</code></pre>
+					<img src="https://i.ibb.co/ZW90zth/8.png" alt="Gutters scheme" style="width: 600px; margin: 0 0 0 4rem; background: transparent;" class="fragment">
+				</section>
+				<section>
+					<h3>Nesting grids</h3>
+					<img src="https://i.ibb.co/7J6jFH0/9.png" alt="Grid areas scheme" style="width: 600px; margin: 0 0 0 4rem; background: transparent;" class="demo-logo">
+				</section>
+				<section>
+					<h3>Subgrid</h3>
+					<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+						.box1 {
+							grid-column-start: 1;
+							grid-column-end: 4;
+							grid-row-start: 1;
+							grid-row-end: 3;
+							display: grid;
+							grid-template-columns: subgrid;
+						}
+					</code></pre>
+					<img src="https://i.ibb.co/SPL3vTj/10.png" alt="Subgrid scheme" style="width: 600px; margin: 0 0 0 4rem; background: transparent;" class="fragment">
+				</section>
+				<section>
+					<h2>Layering items with z-index</h2>
+				</section>
+				<section>
+					<h3>Overlapping without z-index</h3>
+					<div class="flex" style="display: flex; align-items: center; justify-content: center;">
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+							.wrapper {
+								display: grid;
+								grid-template-columns: repeat(3, 1fr);
+								grid-auto-rows: 100px;
+							}
+							  
+							.box1 {
+								grid-column-start: 1;
+								grid-column-end: 4;
+								grid-row-start: 1;
+								grid-row-end: 3;
+							}
+							  
+							.box2 {
+								grid-column-start: 1;
+								grid-row-start: 2;
+								grid-row-end: 4;
+							}
+						</code></pre>
+						<img src="https://i.ibb.co/qrJnSWb/11.png" alt="Without z-index scheme" style="width: 600px; margin: 0 0 0 4rem; background: transparent;" class="fragment">
+					</div>
+				</section>
+				<section>
+					<h3>Controlling the order</h3>
+					<div class="flex" style="display: flex; align-items: center; justify-content: center;">
+						<pre data-id="code-animation"><code class="hljs javascript" data-trim data-line-numbers>
+							.wrapper {
+								display: grid;
+								grid-template-columns: repeat(3, 1fr);
+								grid-auto-rows: 100px;
+							}
+							  
+							.box1 {
+								grid-column-start: 1;
+								grid-column-end: 4;
+								grid-row-start: 1;
+								grid-row-end: 3;
+								z-index: 2;
+							}
+							  
+							.box2 {
+								grid-column-start: 1;
+								grid-row-start: 2;
+								grid-row-end: 4;
+								z-index: 1;
+							}
+						</code></pre>
+						<img src="https://i.ibb.co/4dTYTk4/12.png" alt="With z-index scheme" style="width: 600px; margin: 0 0 0 4rem; background: transparent;" class="fragment">
+					</div>
+				</section>
+				<section>
+					<h2>The end</h2>
+					<img src="https://i.ibb.co/KhYsCrb/13.png" alt="With z-index scheme" style="width: 600px; margin: 0 0 0 4rem; background: transparent;" class="demo-logo">
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
