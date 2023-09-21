@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Presentation</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal" style="background: linear-gradient(to top, #09203f 0%, #537895 100%)">
+			<div class="slides">
+				<section>
+					<p style="font-size: 80px">DevDreamTeam<br>Final project presentation</p>
+				</section>
+				<section>
+					<h2>Team success and key to it</h2>
+				</section>
+				<section>
+					<p3>Each member of our team came to the final task:</p3>
+					<div class="flex" style="display: flex; align-items: center; justify-content: center;">
+						<div class="block">
+							<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">1. With a clear vision of how they wanted to work on it:
+							</p>
+							<p class="fragment" style="margin-left: 40px; color: antiquewhite; text-align: start; font-size: 2rem;">- We didn't want to use frameworks</p>
+							<p class="fragment" style="margin-left: 40px; color: antiquewhite; text-align: start; font-size: 2rem;">- Our goal was to achieve a good result and show our skills</p>	
+							<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">2. By taking an active role in team formation</p>
+						</div>
+					</div>	
+				</section>
+				<section>
+					<h3>Members similar qualities</h3>
+					<div class="block">
+						<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">1. We want to create a highly stable and easy to use application
+						</p>
+						<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">2. We are ranked in the top 200</p>
+						<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">3. We have almost maximum score on cross-checks</p>
+						<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">4. We show progress in their skills from task to task</p>
+						<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">5. Each their work is done with passion</p>
+						<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">6. Everyone has their own strengths that complement the strengths of others</p>
+						<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">7. Everyone has a primary job, but can dedicate the rest of time to the project</p>
+					</div>
+				</section>
+				<section>
+					<h3>Our organization principles:</h3>
+					<div class="block">
+						<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">1. We start conference calls before the start of each sprint and plan our actions</p>
+						<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">2. We actively take a part in task discussions and task distribution</p>
+						<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">3. We don't divide tasks into separate parts; we work together as a team, each on their own component</p>
+						<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">4. Each member sets their own intermediate deadlines, but remeber that we are a team</p>
+						<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">5. Most of questions will be resolved in the Discord chat, with additional conference calls conducted if necessary</p>
+						<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">6. Each team member participates in cross-checks of others' work</p>
+					</div>
+				</section>
+				<section>
+					<h3>Our initial roles:</h3>
+					<div class="block">
+						<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">• Vanya take on the overall project management, configuration, design, styles, as well as deciding the functionality if necessary</p>
+						<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">• Katya connected the view with all internal logics/functions, actively working on event handlers and forms</p>
+						<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">• Vladimir primarily worked on the underlying logic of the application</p>
+					</div>
+				</section>
+				<section>
+					<h3>About working with API</h3>
+					<div class="block">
+						<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">1. The team leader initiates the work with the API</p>
+						<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">2. Other members develop requests and handle responses according to their needs</p>
+						<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">3. If difficulties arise, other members provide advice and assistance or solve the problem ourselves</p>
+						<p class="fragment" style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">4. If changes, corrections, or errors occur, member handles them promptly and resolves any issues</p>
+					</div>
+				</section>
+				<section>
+					<h3>How to reach succes:</h3>
+					<div style="margin: auto; width: 20rem;" class="block">
+						<p style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">1. Form a good team</p>
+						<p style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">2. Discuss principles</p>
+						<p style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">3. Distribute roles</p>
+						<p style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">3. Create a team song</p>
+						<p style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">4. ...</p>
+						<p style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">6. Profit</p>
+					</div>
+					<div style="margin: auto; width: 38rem;" class="block">
+						<p style="margin: 2rem 0; color: antiquewhite; text-align: center; font-size: 2rem;">DDT <s>song</s> hymn:</p>
+						<p style="margin: 0px; color: antiquewhite; text-align: start; font-size: 1.2rem; white-space: pre;">        Am                          E (E7)                                  Am</p>
+						<p style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">Что такое Number? Это Object</p>
+						<p style="margin: 0px; color: antiquewhite; text-align: start; font-size: 1.2rem; white-space: pre;">     A7                                                                                                      Dm</p>
+						<p style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">Function тоже Object, между прочим</p>
+						<p style="margin: 0px; color: antiquewhite; text-align: start; font-size: 1.2rem; white-space: pre;">      Dm                                                 E (E7)                         Am                            F</p>
+						<p style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">В Object превращаются Array и TypeError</p>
+						<p style="margin: 0px; color: antiquewhite; text-align: start; font-size: 1.2rem; white-space: pre;"> Dm                                              E (E7)                  Am              Gm                A7</p>
+						<p style="margin: 0px; color: antiquewhite; text-align: start; font-size: 2rem;">Object, что же ты со мною сделал..</p>
+						<p style="margin: 0px; margin-top: 1rem; color: antiquewhite; text-align: center; font-size: 2rem;">ლ(ಠ_ಠ ლ) </p>
+					</div>
+
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
